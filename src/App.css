@@ -1,38 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 .App {
-  text-align: center;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.search-section {
+  margin-top: 3rem;
+  width: 300px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 25px;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.github-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.github-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.search-section input {
+  width: 80%;
+  height: 40px;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 5px;
+  font-size: 18px;
+  padding-left: 15px;
+}
+
+.results {
+  margin-top: 2rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  row-gap: 15px;
+}
+
+.user-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.repos {
+  width: 300px;
+  overflow: hidden;
+}
+
+.repos ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.repos li {
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #e2e2e2;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  font-weight: bold;
+  row-gap: 10px;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.created {
+  font-size: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.length {
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
